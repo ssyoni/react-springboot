@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class TestController {
+public class TestController2 {
 	
 	@PostMapping("/ip")
 	public ResponseEntity<String> ip (HttpServletRequest request) {
