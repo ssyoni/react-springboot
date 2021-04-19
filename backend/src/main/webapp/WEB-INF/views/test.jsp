@@ -7,5 +7,23 @@
     <title>View Test Page</title></head>
 <body><h2>Hello! ${name}</h2>
 <div>JSP List Test</div>
-<c:forEach var="item" items="${list}" varStatus="idx"> ${idx.index}, ${item.name} <br/> </c:forEach></body>
+<table style="width:100%">
+    <tr>
+      <th>no</th>
+      <th>제목</th>
+      <th>내용</th>
+      <th>작성자</th>
+    </tr>
+    <c:forEach var="item" items="${list}" varStatus="idx"> ${idx.index}, ${item.title} <br/> 
+       <tr>
+        <td>${item.no}</td>
+        <td>${item.title}</td>
+        <td>${item.content}</td>
+        <td>${item.writer}</td>
+      </tr>
+    </c:forEach>
+  </table>
+
+</body>
+
 </html>
